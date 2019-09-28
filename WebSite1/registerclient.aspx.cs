@@ -12,6 +12,10 @@ public partial class register : System.Web.UI.Page
     OdbcConnection conn = new OdbcConnection(ConfigurationManager.ConnectionStrings["simphiwe"].ConnectionString);
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["idno"] == null)
+        {
+            Response.Redirect("login.aspx");
+        }
 
     }
     void re()

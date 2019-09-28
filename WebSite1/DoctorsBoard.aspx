@@ -7,11 +7,11 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    
      <div class="signin">
-        <form  runat="server" id="mnf">
-        <h2 style="color: white">Welcome to HealthaTon
-        <img src="final hacking logo 2.jpg" class="box-img"></img></h2>
+        <form id="form1" runat="server">
+        <h2 style="color: white">Welcome to HealthaTon</h2>
+        <img src="final hacking logo 2.jpg" class="box-img" ></img>
 
             <table>
                 <tr><td>
@@ -58,5 +58,6 @@
 
           
     </form>
+         </div>
 </body>
 </html>

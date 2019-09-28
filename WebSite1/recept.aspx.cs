@@ -1,20 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Data.Odbc;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class lastPage : System.Web.UI.Page
+public partial class DoctorsBoard : System.Web.UI.Page
 {
-    OdbcConnection conn = new OdbcConnection(ConfigurationManager.ConnectionStrings["simphiwe"].ConnectionString);
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["idno"] == null)
+        if(Session["idno"]==null)
         {
             Response.Redirect("login.aspx");
+            if (Session["idno"].ToString() != "Receptionist") ;
         }
     }
 

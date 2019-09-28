@@ -31,8 +31,18 @@ public partial class login : System.Web.UI.Page
             {
                 Session["username"] = getv["username"].ToString();
                 Session["idno"] = getv["idNum"].ToString();
+                string role= getv["role"].ToString();
+                if (role == "receptionist")
+                {
+                    Response.Redirect("recept.aspx");
+
+                }
+                else
+                {
+                    Response.Redirect("book.aspx");
+
+                }
             }
-            Response.Redirect("book.aspx");
         }
         else
         {

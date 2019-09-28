@@ -14,7 +14,11 @@ public partial class book : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["username"] != null)
+        if(Session["idno"]== null)
+        {
+            Response.Redirect("login.aspx");
+        }
+        else if (Session["username"] != null)
         {
             Response.Write(Session["username"].ToString());
             string name = Session["username"].ToString();

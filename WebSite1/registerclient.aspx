@@ -18,7 +18,7 @@
                     <asp:Label ID="Label1" runat="server" Text="Choose Your Role"></asp:Label>
                     <asp:DropDownList ID="role" runat="server">
                         <asp:ListItem>Patient</asp:ListItem>
-                        <asp:ListItem>Doc</asp:ListItem>
+                        <asp:ListItem>Receptionist</asp:ListItem>
                     </asp:DropDownList>
                     <br />
                     <asp:TextBox ID="name1" runat="server" placeholder="Firstname"></asp:TextBox>
