@@ -32,7 +32,7 @@ public partial class login : System.Web.UI.Page
                 Session["username"] = getv["username"].ToString();
                 Session["idno"] = getv["idNum"].ToString();
                 string role= getv["role"].ToString();
-                if (role == "receptionist")
+                if (role == "Receptionist")
                 {
                     Response.Redirect("recept.aspx");
 
